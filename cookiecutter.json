@@ -1,0 +1,10 @@
+{
+    "author_name": "Victor Cortes",
+    "author_email": "your@email.com",
+    "project_name": "My Django Project",
+    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|lower }}",
+    "project_description": "A short description of the project.",
+    "project_version": "0.1.0",
+    "python_version": "3.11",
+    "postgresql_version": "12"
+}
