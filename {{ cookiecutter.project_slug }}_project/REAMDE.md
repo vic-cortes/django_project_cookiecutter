@@ -1,3 +1,3 @@
-# {{ cookiecutter.project_slug }}
+# {{ cookiecutter.project_name }}
 
 This is a short description of my project
