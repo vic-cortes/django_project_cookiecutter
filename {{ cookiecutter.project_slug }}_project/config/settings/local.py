@@ -1,4 +1,5 @@
 from .base import *
+from .config import Config
 
 DEBUG = True
 
@@ -6,8 +7,11 @@ DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "{{ cookiecutter.project_slug }}_db",
+        "NAME": Config.DB_NAME,
+        "USER": Config.DB_USER,
+        "PASSWORD": Config.DB_PASSWORD,
         "HOST": "localhost",
+        "PORT": Config.DB_PORT,
     }
 }
 
