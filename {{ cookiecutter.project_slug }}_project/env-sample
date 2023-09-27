@@ -1,0 +1,16 @@
+# Docker
+COMPOSE_DOCKER_CLI_BUILD = 1
+DOCKER_BUILDKIT = 1
+
+# Database settings
+POSTGRES_USER = "postgres"
+POSTGRES_PASSWORD = "postgres"
+POSTGRES_DB = "{{ cookiecutter.project_slug }}-db"
+
+# Django settings
+DEBUG = 1
+DATABASE_URL = "psql://postgres:postgres@db:5432/{{ cookiecutter.project_slug }}-db"
+
+# Gunicorn settings
+GUNICORN_NUM_WORKERS = 3
+GUNICORN_CLASS = gevent
